@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PervasiveMobile</string>
+    <string name="time">TIME</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh_rules">Reset</string>
+    <string name="Toast">Toast</string>
+    <string name="ui_btn_sendRequest_extra">NOTIFICATION</string>
+    <string name="ui_et_serverURL_default">127.0.0.1:8080</string>
+    <string name="ui_label_requestMethod">ROOM INFORMATION</string>
+    <string name="ui_label_response_light">DIM</string>
+    <string name="ui_label_response_temp">20C</string>
+    <string name="ui_label_response_time">10:30:30</string>
+    <string name="ui_btn_sendRequest_rules">RULES</string>
+    <string name="ui_btn_sendRequest_suggestions">SUGGEST</string>
+    <string name="ui_btn_add_rule">ADD RULE</string>
+    <string name="ui_btn_edit_rule">EDIT RULE</string>
+    <string name="ui_btn_delete_rule">DELETE RULE</string>
+    <string name="ui_label_edit_rule">EDIT RULE</string>
+    <string name="ui_label_rules">RULES</string>
+    <string name="ui_label_rule_add">ADD RULE</string>
+    <string name="ui_spinner_choose_temp">CHOOSE TEMPERATURE</string>
+    <string name="ui_label_boolean">OPERATOR</string>
+    <string name="ui_label_zipcode">ZIPCODE</string>
+    <string name="ui_btn_suggest_rule">SUGGEST RULE</string>
+    <string name="ui_btn_add_suggested_rule">ADD RULE</string>
+    <string name="zipcode_prompt">Enter Your Zipcode</string>
+    <string name="ui_label_outside_temp">OUTSIDE TEMPERATURE</string>
+    <string name="app_back_color">#3385D6</string>
+    <string name="getTemp">getTemp</string>
+    <string name="getLight">getLight</string>
+    <string name="setTemp">TEMPERATURE</string>
+    <string name="setLight">ADJUST LIGHT</string>
+    <string name="setBlind">BLIND</string>
+    <string name="notification">NOTIFICATIONS</string>
+    <string name="noification_rule">NOTIFICATION TIME</string>
+    <string name="ui_btn_add_notification_rule">ADD NOTIFICATION TIME</string>
+    <string name="ui_btn_see_notifications">SEE NOTIFICATIONS</string>
+    <string name="title_activity_display_rule">DisplayRuleActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_rules">RulesActivity</string>
+    <string name="title_activity_rule_add">RuleAddActivity</string>
+    <string name="title_activity_rule_edit">RuleEditActivity</string>
+    <string name="title_activity_suggest_rule">SuggestRuleActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_see_notifications">SeeNotificationsActivity</string>
+
+</resources>

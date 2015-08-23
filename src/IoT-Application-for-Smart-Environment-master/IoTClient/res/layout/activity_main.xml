@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppBaseTheme"
+    tools:context="edu.rit.csci759.mobile.MainActivity"
+    android:background="@color/button_color"    
+     >
+
+ 
+   <ScrollView 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >    
+        
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    >
+       
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/first_stripe"
+         >
+
+        
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/CodeFont1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/ui_label_requestMethod"
+        android:textAppearance="?android:attr/textAppearanceMedium" />    
+        
+    
+        <TextView
+        android:id="@+id/tv_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"        
+         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/textView1"
+        android:text="@string/ui_label_response_temp"
+        style="@style/CodeFont1"
+        android:textSize="60sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+
+        <TextView
+        android:id="@+id/tv_response_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"        
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tv_response"
+        android:text="@string/ui_label_response_light"
+        style="@style/CodeFont1"
+        android:textSize="60sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+         <TextView       
+        android:id="@+id/time_text" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"        
+         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"    
+        android:layout_below="@id/tv_response_1"
+        android:text="@string/time"
+        style="@style/CodeFont1"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+        
+        
+        <TextView
+        android:id="@+id/tv_response_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"        
+         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/time_text"
+        android:text="@string/ui_label_response_time"
+        style="@style/CodeFont1"
+        android:textSize="60sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    	
+        
+        
+    </RelativeLayout>
+  
+   
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center">
+	 
+        
+    <Button
+        android:id="@+id/btn_sendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="0dp"
+        android:padding="5dp"       
+  		android:layout_alignParentTop="true"   
+  		android:layout_centerHorizontal="true"    
+        android:text="@string/ui_btn_sendRequest_rules"
+        android:background="@color/button_color"
+         />
+   
+        
+        
+    <Button
+        android:id="@+id/change_fuzzy_logic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"        
+        android:layout_marginTop="0dp"      
+        android:layout_below="@id/btn_sendRequest"
+         android:layout_centerHorizontal="true"
+        android:background="@color/button_color"
+        android:text="@string/ui_btn_sendRequest_suggestions" />   
+   
+     <Button
+        android:id="@+id/btn_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"        
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/change_fuzzy_logic"
+        android:layout_centerHorizontal="true"
+        android:background="@color/button_color"        
+        android:text="@string/ui_btn_sendRequest_extra" />   
+   
+        </RelativeLayout>
+        
+      </LinearLayout>    
+    </ScrollView>  
+</LinearLayout>

@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.rit.csci759.mobile.RuleEditActivity"
+     android:background="@color/button_color"  
+     >
+
+    
+    <TextView
+        android:id="@+id/ui_label_edit_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"                
+        android:text="@string/ui_label_edit_rule" 
+        android:textSize="30sp"
+        style="@style/CodeFont"
+        />
+    
+       <LinearLayout
+           android:id="@+id/edit_del_buttons"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:orientation="vertical"
+            >
+    
+        <Button 
+         
+        android:id="@+id/rule_edit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        style="@style/CodeFont1"
+        android:background="@color/first_stripe"  
+        android:text="@string/ui_btn_edit_rule"
+         />
+        
+        
+        <Button 
+         
+        android:id="@+id/rule_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"        
+        android:gravity="center"
+        style="@style/CodeFont1"
+        android:background="@color/first_stripe"  
+        android:text="@string/ui_btn_delete_rule"
+         />
+        
+        </LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"    
+        android:layout_centerVertical="true"
+        android:layout_above="@id/edit_del_buttons"
+        android:layout_below="@id/ui_label_edit_rule"
+        >
+        
+    <LinearLayout 
+        android:id="@+id/editRulesSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        
+        >
+        
+        <TextView
+        android:id="@+id/ui_label_edit_temp" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"            
+        android:text="@string/setTemp" 
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        style="@style/CodeFont2"        
+        />
+        
+        <TextView
+        android:id="@+id/ui_label_current_temp" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"            
+        android:text="@string/setTemp" 
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        style="@style/CodeFont2"        
+        />
+    
+     <Spinner
+        android:id="@+id/spinner_temp_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"       
+         android:layout_gravity="center"
+        android:textSize="15sp"        
+        style="@style/CodeFont" 
+         />
+     
+       
+    <TextView
+        android:id="@+id/ui_label_edit_boolean" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="10dp"               
+         android:layout_gravity="center"        
+        android:text="@string/ui_label_boolean" 
+        android:textSize="25sp"
+        style="@style/CodeFont2"        
+        />
+    
+    <TextView
+        android:id="@+id/ui_label_current_boolean" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="10dp"               
+         android:layout_gravity="center"        
+        android:text="@string/ui_label_boolean" 
+        android:textSize="15sp"
+        style="@style/CodeFont2"        
+        />
+    
+     <Spinner
+        android:id="@+id/spinner_boolean_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+          android:layout_gravity="center"       
+        android:textSize="15sp"        
+        style="@style/CodeFont" 
+         />
+     
+     <TextView
+        android:id="@+id/ui_label_edit_light" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:layout_marginTop="10dp"                     
+        android:text="@string/setLight" 
+        android:textSize="25sp"
+         android:layout_gravity="center"
+        style="@style/CodeFont2"        
+        />
+     
+     <TextView
+        android:id="@+id/ui_label_current_light" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:layout_marginTop="10dp"                     
+        android:text="@string/setLight" 
+        android:textSize="15sp"
+         android:layout_gravity="center"
+        style="@style/CodeFont2"        
+        />
+    
+     <Spinner
+        android:id="@+id/spinner_light_edit"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"       
+         android:layout_gravity="center"
+        android:textSize="15sp"        
+        style="@style/CodeFont" 
+         />
+     
+     
+      <TextView
+        android:id="@+id/ui_label_edit_blind" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:layout_marginTop="10dp"                     
+        android:text="@string/setBlind" 
+        android:textSize="25sp"
+         android:layout_gravity="center"
+        style="@style/CodeFont2"        
+        />
+    
+      <TextView
+        android:id="@+id/ui_label_current_blind" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:layout_marginTop="10dp"                     
+        android:text="@string/setBlind" 
+        android:textSize="15sp"
+         android:layout_gravity="center"
+        style="@style/CodeFont2"        
+        />
+      
+     <Spinner
+        android:id="@+id/spinner_blind_edit"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"       
+         android:layout_gravity="center"
+        android:textSize="15sp"        
+        style="@style/CodeFont" 
+         />
+     
+     </LinearLayout>
+     </ScrollView>    
+ 
+    
+    
+</RelativeLayout>
